@@ -1,0 +1,191 @@
+html {
+	height: 100%;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	padding: 0px;
+	margin: 0px;
+	font-family: 'Ubuntu', sans-serif;
+	background-color: #E8E8E8;
+}
+
+#wrapper {
+	position: relative;
+	min-height: 100%;
+}
+
+
+/*HEADER*/
+
+header {
+	position: fixed;
+	width: 100%;
+	height: 50px;
+	background-color: #595959;
+	color: #fff;
+	z-index: 1;
+}
+
+header #siteid {
+	position: absolute;
+	left: 5px;
+	top: 5px;
+}
+
+header span a, #header-logo {
+	height: 40px;
+	width: 40px;
+	margin: auto;
+}
+
+header #header-logo {
+	display: inline-block;
+	background-image: url("../img/TBwhite.png");
+	background-size: contain;
+}
+
+header h1 {
+	display: inline-block;
+	font-size: 125%;
+}
+
+header p {
+	display: inline;
+	font-style: italic
+}
+
+header ul {
+	padding: 0px;
+	position: relative;
+	display: inline;
+	list-style-type: none;
+}
+
+header #buttons li {
+	display: inline-block;
+	font-size: 75%;
+	float: right;
+	width: 50px;
+	height: 50px;
+	margin-top: 5px;
+	text-align: center;
+}
+
+header ul li #menu-icon {
+	background-image: url("../img/menu-icon.svg");
+}
+
+header ul li #search-icon {
+	background-image: url("../img/search-icon.svg");
+}
+
+header ul li span {
+	position: relative;
+	display: block;
+	height: 30px;
+	width: 45px;
+	margin: auto;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+header nav {
+	position: absolute;
+	top: 50px;
+	left: 0px;
+	width:100%;
+	background-color: #595959;
+}
+
+header nav ul {
+	padding: 0px;
+	margin: 0px;
+}
+
+header nav ul li {
+	width: 100%;
+	padding: 5px;
+	background-color: #595959;
+	text-align: center;
+}
+
+header .closed {
+	display: none;
+}
+
+
+/*CONTENT*/
+
+#wrapper #content {
+	height: 100%;
+	padding-top: 50px;
+}
+
+
+/*FOOTER*/
+
+footer {
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	width: 100%;
+	height: 100px;
+	background-color: #595959;
+	text-align: center;
+	overflow: hidden;
+}
+
+footer div {
+	display: inline-block;
+	vertical-align: top;
+	width: 30%;
+	margin-top: 10px;
+	font-size: 75%;
+	color: #FFF;
+}
+
+footer h3 {
+	margin-top: 2px;
+
+}
+
+footer div a img {
+	max-width: 25%;
+	display: inline;
+}
+
+footer div p {
+	display: inline;
+}
+
+footer #copyright {
+	position: absolute;
+	width: 100%;
+	left: 0px;
+	bottom: 5px;
+}
+
+
+/*PSEUDO*/
+
+header a:link, a:visited, footer a:link, a:visited {
+	text-decoration: none;
+	color: #33CCFF;
+}
+
+header a:hover, a:active, footer a:hover, a:active {
+	text-decoration: underline;
+	color: #33CCFF;
+}
+
+
+
+/* WHITESPACE BELOW - DELETE THIS */
+
+#whitespace {
+	height: 1000px;
+	width: 100px;
+}
