@@ -1,3 +1,17 @@
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ubuntu'), url(http://fonts.gstatic.com/s/ubuntu/v7/vRvZYZlUaogOuHbBTT1SNevvDin1pK8aKteLpeZ5c0A.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Ubuntu Italic'), local('Ubuntu-Italic'), url(http://fonts.gstatic.com/s/ubuntu/v7/kbP_6ONYVgE-bLa9ZRbvvnYhjbSpvc47ee6xR_80Hnw.woff) format('woff');
+}
+
 html {
 	height: 100%;
 }
@@ -14,6 +28,17 @@ body {
 #wrapper {
 	position: relative;
 	min-height: 100%;
+}
+
+
+header a:link, a:visited, footer a:link, a:visited {
+	text-decoration: none;
+	color: #33CCFF;
+}
+
+header a:hover, a:active, footer a:hover, a:active {
+	text-decoration: underline;
+	color: #33CCFF;
 }
 
 
@@ -176,20 +201,6 @@ footer #copyright {
 	left: 0px;
 	bottom: 5px;
 }
-
-
-/*PSEUDO*/
-
-header a:link, a:visited, footer a:link, a:visited {
-	text-decoration: none;
-	color: #33CCFF;
-}
-
-header a:hover, a:active, footer a:hover, a:active {
-	text-decoration: underline;
-	color: #33CCFF;
-}
-
 
 
 /* WHITESPACE BELOW - DELETE THIS */
