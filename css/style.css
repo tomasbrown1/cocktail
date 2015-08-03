@@ -74,11 +74,11 @@ header #buttons li {
 }
 
 header ul li #menu-icon {
-	background-image: url("../img/menu-icon.svg");
+	background-image: url("../img/menu-icon.png");
 }
 
 header ul li #search-icon {
-	background-image: url("../img/search-icon.svg");
+	background-image: url("../img/search-icon.png");
 }
 
 header ul li span {
