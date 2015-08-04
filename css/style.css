@@ -31,12 +31,12 @@ body {
 }
 
 
-header a:link, a:visited, footer a:link, a:visited {
+a:link, a:visited {
 	text-decoration: none;
 	color: #33CCFF;
 }
 
-header a:hover, a:active, footer a:hover, a:active {
+a:hover, a:active {
 	text-decoration: underline;
 	color: #33CCFF;
 }
@@ -133,7 +133,6 @@ header nav ul {
 header nav ul li {
 	width: 100%;
 	padding: 5px;
-	background-color: #595959;
 	text-align: center;
 }
 
@@ -151,11 +150,11 @@ header .closed {
 }
 
 #content h2 {
-	margin-bottom: 0.1em;
+	margin-bottom: 0px;
 }
 
 #content p {
-	margin-top: 0.1em;
+	margin-top: 0px;
 }
 
 
@@ -203,9 +202,29 @@ footer #copyright {
 }
 
 
-/* WHITESPACE BELOW - DELETE THIS */
+/*MEDIA QUERIES*/
 
-#whitespace {
-	height: 1000px;
-	width: 100px;
+@media screen and (min-width: 640px) {
+	header #siteid {
+		margin-left: 15%;
+	}
+
+	header ul #menu {
+		margin-right: 15%;
+	}
+
+	header nav {
+		width: 350px;
+		left: auto;
+		right: 150px;
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px; 
+	}
+
+	#content {
+		margin-left: 20%;
+		margin-right: 30%;
+		font-size: 75%;
+		min-width: 50%;
+	}
 }

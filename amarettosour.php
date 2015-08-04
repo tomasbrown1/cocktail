@@ -8,7 +8,7 @@ include ('includes/header.html')
 				<h2>Name:</h2>
 				<p>Amaretto Sour</p>
 				<h2>Glassware:</h2>
-				<p><a href="glossary.php/#oldfashioned">Old Fashioned</a></p>
+				<p>Old Fashioned</p>
 				<h2>Ingredients:</h2>
 				<p>50ml Amaretto<br />
 					25ml Lemon Juice<br />
