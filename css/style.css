@@ -68,7 +68,7 @@ header span a, #header-logo {
 header #header-logo {
 	display: inline-block;
 	background-image: url("../img/dwlogo-white-small.png");
-	background-size: contain;
+	background-size: cover;
 }
 
 header h1 {
@@ -98,6 +98,28 @@ header #buttons li {
 	height: 50px;
 	margin-top: 5px;
 	text-align: center;
+	cursor: pointer;
+}
+
+header #searchbar {
+	display: none;
+	position: absolute;
+	margin: 0px;
+	padding: 5px;
+	top: 50px;
+	left: 0px;
+	width: 100%;
+	background-color: #595959;
+}
+
+header #searchbar input {
+	padding: 0px;
+	border-radius: 12.5px;
+	width: 98%;
+	border: none;
+	margin: 5px auto;
+	height: 25px;
+	text-align: center;
 }
 
 header ul li #menu-icon {
@@ -120,10 +142,12 @@ header ul li span {
 }
 
 header nav {
+	display: none;
 	position: absolute;
+	padding-top: 5px;
 	top: 50px;
 	left: 0px;
-	width:100%;
+	width: 100%;
 	background-color: #595959;
 }
 
@@ -133,13 +157,10 @@ header nav ul {
 }
 
 header nav ul li {
+	list-style-type: none;
 	width: 100%;
 	padding: 5px;
 	text-align: center;
-}
-
-header .closed {
-	display: none;
 }
 
 
@@ -157,6 +178,19 @@ header .closed {
 
 #content p {
 	margin-top: 0px;
+}
+
+#content ul {
+	padding-left: 35px;
+}
+
+#content ul li {
+	padding: 5px;
+	margin-left: -15px;
+}
+
+#content .photo {
+	max-width: 100%;
 }
 
 
@@ -187,7 +221,7 @@ footer h3 {
 
 }
 
-footer div a img {
+footer #share a img {
 	max-width: 25%;
 	display: inline;
 }
@@ -206,27 +240,93 @@ footer #copyright {
 
 /*MEDIA QUERIES*/
 
-@media screen and (min-width: 640px) {
-	header #siteid {
-		margin-left: 15%;
+@media screen and (min-width: 900px) {
+	header {
+		height: 100px;
 	}
 
-	header ul #menu {
+	header span a, #header-logo {
+		height: 80px;
+		width: 80px;
+	}
+
+	header span h1 {
+		font-size: 250%;
+	}
+
+	header #siteid {
+		margin-left: 15%;
+		margin-top: 5px;
+	}
+
+	header #buttons {
 		margin-right: 15%;
+	}
+
+	header #buttons li {
+		font-size: 150%;
+		width: 100px;
+		height: 100px;
+		margin-top: 5px;
+		text-align: center;
+	}
+
+	header #buttons li span {
+		height: 60px;
+		width: 90px;
+	}
+
+	header #buttons #search {
+		display: none;
+	}
+
+	header #buttons #menu {
+		display: block;
+	}
+
+	header #searchbar, header #searchbar input {
+		display: inline-block;
+		width: 200px;
+	}
+
+	header #searchbar {
+		position: absolute;
+		top: 17px;
+		right: 400px;
+		left: auto;
+	}
+
+	header #buttons #searchbar {
+		margin-right: 25px;
+		margin-top: 20px;
 	}
 
 	header nav {
 		width: 350px;
+		top: 100px;
 		left: auto;
-		right: 150px;
+		right: 15%;
 		border-bottom-left-radius: 10px;
-		border-bottom-right-radius: 10px; 
+		border-bottom-right-radius: 10px;
+	}
+
+	header nav ul li {
+		font-size: 150%;
 	}
 
 	#content {
 		margin-left: 20%;
 		margin-right: 30%;
-		font-size: 75%;
+		font-size: 100%;
 		min-width: 50%;
+	}
+
+	footer{
+		height: 150px;
+		font-size: 150%;
+	}
+
+	footer #share a {
+		max-width: 50%;
 	}
 }
