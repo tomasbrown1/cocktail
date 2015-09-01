@@ -33,12 +33,12 @@ body {
 
 a:link, a:visited {
 	text-decoration: none;
-	color: #33CCFF;
+	color: #02AAAF;
 }
 
 a:hover, a:active {
 	text-decoration: underline;
-	color: #33CCFF;
+	color: #02AAAF;
 }
 
 
@@ -55,8 +55,10 @@ header {
 
 header #siteid {
 	position: absolute;
+	height: 45px;
 	left: 5px;
 	top: 5px;
+	color: #FFF;
 }
 
 header span a, #header-logo {
@@ -182,11 +184,13 @@ header nav ul li {
 
 #content ul {
 	padding-left: 35px;
+	margin-top: 0px;
 }
 
 #content ul li {
 	padding: 5px;
 	margin-left: -15px;
+	padding: 2px;
 }
 
 #content .photo {
@@ -257,6 +261,7 @@ footer #copyright {
 	header #siteid {
 		margin-left: 15%;
 		margin-top: 5px;
+		height: 90px;
 	}
 
 	header #buttons {
@@ -312,6 +317,11 @@ footer #copyright {
 
 	header nav ul li {
 		font-size: 150%;
+	}
+
+	#wrapper #content {
+		padding-top: 100px;
+		padding-bottom: 150px;
 	}
 
 	#content {

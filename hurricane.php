@@ -22,20 +22,17 @@ include ('includes/header.html')
 				<h2>Method:</h2>
 				<ul>
 					<li>Whisk the egg white up in the boston with a bar spoon until it’s foamy and full of air</li> 
-					<li>Add the amaretto, lemon juice, sugar syrup and bitters</li>
-					<li>Shake vigorously</li> 
+					<li>Add the amaretto, lemon juice, sugar syrup and bitters and shake vigorously</li> 
 					<li>Strain into an Old Fashioned glass full of ice</li>
-					<li>Garnish with the lemon and cherry</li>
+					<li>garnish with the lemon and cherry</li>
 				</ul>
 				<h2>History:</h2>
 				<p>A cocktail from the ‘Sours’ category</p>
 				<h2>Variations:</h2>
-				<p>
-					<a href="whiskeysour.php">Whiskey Sour</a><br />
-					<a href="ginsour.php">Gin Sour</a><br />
-					<a href="brandysour.php">Brandy Sour</a><br />
-					<a href="piscosour.php">Pisco Sour</a>
-				</p>
+				<p>Whiskey Sour<br />
+					Gin Sour<br />
+					Brandy Sour<br />
+					Pisco Sour</p>
 
 
 <?php
