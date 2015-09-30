@@ -1,3 +1,17 @@
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ubuntu'), url(http://fonts.gstatic.com/s/ubuntu/v7/vRvZYZlUaogOuHbBTT1SNevvDin1pK8aKteLpeZ5c0A.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Ubuntu Italic'), local('Ubuntu-Italic'), url(http://fonts.gstatic.com/s/ubuntu/v7/kbP_6ONYVgE-bLa9ZRbvvnYhjbSpvc47ee6xR_80Hnw.woff) format('woff');
+}
+
 html {
 	height: 100%;
 }
@@ -17,6 +31,17 @@ body {
 }
 
 
+a:link, a:visited {
+	text-decoration: none;
+	color: #02AAAF;
+}
+
+a:hover, a:active {
+	text-decoration: underline;
+	color: #02AAAF;
+}
+
+
 /*HEADER*/
 
 header {
@@ -30,8 +55,10 @@ header {
 
 header #siteid {
 	position: absolute;
+	height: 45px;
 	left: 5px;
 	top: 5px;
+	color: #FFF;
 }
 
 header span a, #header-logo {
@@ -43,7 +70,7 @@ header span a, #header-logo {
 header #header-logo {
 	display: inline-block;
 	background-image: url("../img/dwlogo-white-small.png");
-	background-size: contain;
+	background-size: cover;
 }
 
 header h1 {
@@ -56,20 +83,44 @@ header p {
 	font-style: italic
 }
 
-header ul {
+header #buttons {
+	position: absolute;
+	top: 0px;
+	right: 0px;
 	padding: 0px;
-	position: relative;
-	display: inline;
+	margin: 0px;
+	display: block;
 	list-style-type: none;
 }
 
 header #buttons li {
-	display: inline-block;
-	font-size: 75%;
 	float: right;
+	font-size: 75%;
 	width: 50px;
 	height: 50px;
 	margin-top: 5px;
+	text-align: center;
+	cursor: pointer;
+}
+
+header #searchbar {
+	display: none;
+	position: absolute;
+	margin: 0px;
+	padding: 5px;
+	top: 50px;
+	left: 0px;
+	width: 100%;
+	background-color: #595959;
+}
+
+header #searchbar input {
+	padding: 0px;
+	border-radius: 12.5px;
+	width: 98%;
+	border: none;
+	margin: 5px auto;
+	height: 25px;
 	text-align: center;
 }
 
@@ -93,10 +144,12 @@ header ul li span {
 }
 
 header nav {
+	display: none;
 	position: absolute;
+	padding-top: 5px;
 	top: 50px;
 	left: 0px;
-	width:100%;
+	width: 100%;
 	background-color: #595959;
 }
 
@@ -106,14 +159,10 @@ header nav ul {
 }
 
 header nav ul li {
+	list-style-type: none;
 	width: 100%;
 	padding: 5px;
-	background-color: #595959;
 	text-align: center;
-}
-
-header .closed {
-	display: none;
 }
 
 
@@ -126,11 +175,26 @@ header .closed {
 }
 
 #content h2 {
-	margin-bottom: 0.1em;
+	margin-bottom: 0px;
 }
 
 #content p {
-	margin-top: 0.1em;
+	margin-top: 0px;
+}
+
+#content ul {
+	padding-left: 35px;
+	margin-top: 0px;
+}
+
+#content ul li {
+	padding: 5px;
+	margin-left: -15px;
+	padding: 2px;
+}
+
+#content .photo {
+	max-width: 100%;
 }
 
 
@@ -161,7 +225,7 @@ footer h3 {
 
 }
 
-footer div a img {
+footer #share a img {
 	max-width: 25%;
 	display: inline;
 }
@@ -178,23 +242,101 @@ footer #copyright {
 }
 
 
-/*PSEUDO*/
+/*MEDIA QUERIES*/
 
-header a:link, a:visited, footer a:link, a:visited {
-	text-decoration: none;
-	color: #33CCFF;
-}
+@media screen and (min-width: 900px) {
+	header {
+		height: 100px;
+	}
 
-header a:hover, a:active, footer a:hover, a:active {
-	text-decoration: underline;
-	color: #33CCFF;
-}
+	header span a, #header-logo {
+		height: 80px;
+		width: 80px;
+	}
 
+	header span h1 {
+		font-size: 250%;
+	}
 
+	header #siteid {
+		margin-left: 15%;
+		margin-top: 5px;
+		height: 90px;
+	}
 
-/* WHITESPACE BELOW - DELETE THIS */
+	header #buttons {
+		margin-right: 15%;
+	}
 
-#whitespace {
-	height: 1000px;
-	width: 100px;
+	header #buttons li {
+		font-size: 150%;
+		width: 100px;
+		height: 100px;
+		margin-top: 5px;
+		text-align: center;
+	}
+
+	header #buttons li span {
+		height: 60px;
+		width: 90px;
+	}
+
+	header #buttons #search {
+		display: none;
+	}
+
+	header #buttons #menu {
+		display: block;
+	}
+
+	header #searchbar, header #searchbar input {
+		display: inline-block;
+		width: 200px;
+	}
+
+	header #searchbar {
+		position: absolute;
+		top: 17px;
+		right: 400px;
+		left: auto;
+	}
+
+	header #buttons #searchbar {
+		margin-right: 25px;
+		margin-top: 20px;
+	}
+
+	header nav {
+		width: 350px;
+		top: 100px;
+		left: auto;
+		right: 15%;
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+	}
+
+	header nav ul li {
+		font-size: 150%;
+	}
+
+	#wrapper #content {
+		padding-top: 100px;
+		padding-bottom: 150px;
+	}
+
+	#content {
+		margin-left: 20%;
+		margin-right: 30%;
+		font-size: 100%;
+		min-width: 50%;
+	}
+
+	footer{
+		height: 150px;
+		font-size: 150%;
+	}
+
+	footer #share a {
+		max-width: 50%;
+	}
 }

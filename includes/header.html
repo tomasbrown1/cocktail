@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title><?php echo $pageTitle; ?></title>
+		<title>Drink Wizard | <?php echo $pageTitle; ?></title>
 		<link type="text/css" rel="stylesheet" href="css/style.css"/>
-		<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,400italic' rel='stylesheet' type='text/css'>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<meta charset="UTF-8">
 		<meta name="description" content="<?php echo $pageDescription; ?>">
@@ -12,23 +11,27 @@
 	<body>
 		<div id="wrapper">
 			<header>
-				<span id="siteid">
-					<a href="#"><div id="header-logo" title="Drink Wizard Logo"></div></a>
-					<h1>Drink Wizard</h1><p>.co.uk</p>
-				</span>
+				<a href="index.php">
+					<span id="siteid">
+						<div id="header-logo" title="Drink Wizard Logo"></div>
+						<h1>Drink Wizard</h1><p>.co.uk</p>
+					</span>
+				</a>
 				<ul id="buttons">
-					<li id="menu"><span id="menu-icon" title="Menu"></span>Menu</li>
+					<li id="menu"><span id="menu-icon" title="Menu"></span>Menu</li>&nbsp;
 					<li id="search"><span id="search-icon" title="Search"></span>Search</li>
 				</ul>
-				<nav id="nav" class="closed">
+				<div id="searchbar"><input type="search" placeholder="Search for cocktail..."><input type="submit" value="Search"></div>
+				<nav id="nav">
 					<ul>
-						<li><a href="#">Home</a></li>
+						<li><a href="index.php">Home</a></li>
 						<li><a href="#">Long Cocktails</a></li>
 						<li><a href="#">Short Cocktails</a></li>
 						<li><a href="#">Martini Cocktails</a></li>
 						<li><a href="#">Shooters</a></li>
 						<li><a href="#">Mocktails</a></li>
-						<li><a href="#">Glossary</a></li>
+						<li><a href="glossary.php">Glossary</a></li>
+						<li><a href="sitemap.php">Site Map</a></li>
 					</ul>	
 				</nav>
 			</header>
