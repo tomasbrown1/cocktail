@@ -296,8 +296,8 @@ footer #copyright {
 
 	header #searchbar {
 		position: absolute;
-		top: 17px;
-		right: 400px;
+		top: 10px;
+		right: calc(15% + 90px);
 		left: auto;
 	}
 
