@@ -197,6 +197,17 @@ header nav ul li {
 	max-width: 100%;
 }
 
+.linkpage a {
+	display: inline-block;
+	max-width: 30%;
+	margin-bottom: 20px;
+	vertical-align: top;
+}
+
+.linkpage a img {
+	max-width: 100%;
+}
+
 
 /*FOOTER*/
 
