@@ -9,7 +9,7 @@ include ('includes/header.html')
 				<p>Various types of cocktail shakers exist with the most common being the boston style shaker (pictured). To correctly use a 
 					boston style cocktail shaker, you first fill the glass ‘boston’ with ice and the required ingredients. Then place the metal 
 					‘tin’ on top of the boston with the opening facing down and lock it into place with a twist or a sharp bang with the palm of 
-					your hand. Next take the shaker with a hand at each end and with the tin facing away from you and shake until the contents is 
+					your hand. Next take the shaker with a hand at each end and the tin facing away from you and shake until the contents is 
 					sufficiently chilled and mixed.</p><br />
 
 				<h2>Bar Spoon</h2>
@@ -45,7 +45,7 @@ include ('includes/header.html')
 				<img src="####################" alt="Champagne Flute">
 				<p>A standard champagne flute. Used primarily for champagne cocktails and bellini’s.</p><br />
 
-				<h2><a name="oldfashioned"s>Old Fashioned Glass</a></h2>
+				<h2>Old Fashioned Glass</h2>
 				<img src="####################" alt="Old Fashioned Glass">
 				<p>A short, wide glass used for ‘short’ cocktails. Named after the Old Fashioned cocktail.</p><br />
 

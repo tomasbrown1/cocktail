@@ -5,15 +5,15 @@ include ('includes/header.html')
 ?>
 
 
-				<div id="cse-search-results"></div>
-				<script type="text/javascript">
-				  var googleSearchIframeName = "cse-search-results";
-				  var googleSearchFormName = "cse-search-box";
-				  var googleSearchFrameWidth = "100%";
-				  var googleSearchDomain = "www.google.co.uk";
-				  var googleSearchPath = "/cse";
-				</script>
-				<script type="text/javascript" src="http://www.google.com/afsonline/show_afs_search.js"></script>
+				<h1>No results found!</h1>
+				<p>Try searching again or select a category below to browse all the cocktails on the site:</p>
+				<ul>
+					<li><a href="longcocktails.php">Long Cocktails</a></li>
+					<li><a href="shortcocktails.php">Short Cocktails</a></li>
+					<li><a href="martinicocktails.php">Martini Cocktails</a></li>
+					<li><a href="shooters.php">Shooters</a></li>
+					<li><a href="mocktails.php">Mocktails</a></li>
+				</ul>
 
 
 
