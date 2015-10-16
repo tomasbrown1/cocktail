@@ -1,6 +1,6 @@
 <?php
 $pageTitle = 'Drink Wizard';
-$pageDescription = 'Drink Wizard ome age | How to make expert cocktails';
+$pageDescription = 'Drink Wizard home page | How to make expert cocktails';
 include ('includes/header.html')
 ?>
 
