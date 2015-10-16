@@ -29,7 +29,7 @@ include ('includes/header.html')
 				<img src="####################" alt="Muddler">
 				<p>Muddlers can be made out of wood, plastic or metal and are used to get the juices out of fruit.</p><br />
 
-				<h2>Vegetable Peeler</h2>
+				<h2>Citrus Zester</h2>
 				<img src="####################" alt="Vegetable Peeler">
 				<p>Used to take the skin off of fruit to use as garnish.</p><br />
 
@@ -39,7 +39,7 @@ include ('includes/header.html')
 
 				<h2>Cocktail Glass</h2>
 				<img src="####################" alt="Cocktail Glass">
-				<p>Often mistakenly called a ‘Martini Glass’ this glass was used for cocktails before the Martini even existed.</p><br />
+				<p>Often mistakenly called a ‘Martini Glass’ this glass is used for classic martini style cocktails.</p><br />
 				
 				<h2>Champagne Flute</h2>
 				<img src="####################" alt="Champagne Flute">
@@ -59,7 +59,7 @@ include ('includes/header.html')
 
 				<h2>Shot/Shooter Glass</h2>
 				<img src="####################" alt="Shot/Shooter Glass">
-				<p>A small glass used for 25-50ml of liquid. Usually drinks served in a glass this style are designed to be consumed all 
+				<p>A small glass that contains 25-50ml of liquid. Usually drinks served in a glass this style are designed to be consumed all 
 					in one go.</p><br />
 
 <?php
