@@ -1,6 +1,6 @@
 <?php
-$pageTitle = 'Drink Wizard';
-$pageDescription = 'Drink Wizard ome age | How to make expert cocktails';
+$pageTitle = 'No search results found';
+$pageDescription = 'Drink Wizard | No search results found';
 include ('includes/header.html')
 ?>
 

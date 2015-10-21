@@ -197,6 +197,13 @@ header nav ul li {
 	max-width: 100%;
 }
 
+.homelinks a {
+	display: inline-block;
+	max-width: 45%;
+	margin-bottom: 30px;
+	vertical-align: top;
+}
+
 .linkpage a {
 	display: inline-block;
 	max-width: 30%;
@@ -204,7 +211,7 @@ header nav ul li {
 	vertical-align: top;
 }
 
-.linkpage a img {
+.linkpage a img, .homelinks a img {
 	max-width: 100%;
 }
 
