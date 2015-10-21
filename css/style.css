@@ -215,6 +215,14 @@ header nav ul li {
 	max-width: 100%;
 }
 
+.glossary h2 {
+	margin-top: 0px;
+}
+
+.glossary p {
+	margin-bottom: 32px;
+}
+
 
 /*FOOTER*/
 
